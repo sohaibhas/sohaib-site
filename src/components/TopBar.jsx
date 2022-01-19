@@ -9,12 +9,9 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
-  menu: {
-    display: "inline-block",
-    backgroundcolor: "red",
-  },
   title: {
     color: "black",
     padding: "20px",
@@ -41,16 +38,16 @@ const TopBar = () => {
           </Grid>
           <Grid item xs={6} style={{ display: "flex" }}>
             <Typography variant="h6" className={classes.title}>
-              Home
+              <Link to="/">Home</Link>
             </Typography>
             <Typography variant="h6" className={classes.title}>
-              Pages
+              <Link to="/pages">Pages</Link>
             </Typography>
             <Typography variant="h6" className={classes.title}>
-              Shop
+            <Link to="/shop">Shop</Link>
             </Typography>
             <Typography variant="h6" className={classes.title}>
-              Blog
+            <Link to="/blog">Blog</Link>
             </Typography>
           </Grid>
           <Grid item xs={3}>
