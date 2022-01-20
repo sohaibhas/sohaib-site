@@ -50,13 +50,20 @@ const TopBar = () => {
             <Link to="/blog">Blog</Link>
             </Typography>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} className={classes.title}>
             <Button
               color="transparent"
               styles={{ float: "right" }}
               className={classes.btn}
             >
-              Login
+              LOGIN
+            </Button>
+            <Button
+              color="transparent"
+              styles={{ float: "right"}}
+              className={classes.btn}
+            >
+              SIGUP
             </Button>
           </Grid>
         </Toolbar>
