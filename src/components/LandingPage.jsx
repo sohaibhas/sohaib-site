@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import SendIcon from "@mui/icons-material/Send";
 import NewArrival from "./Landingpage/NewArrival";
+import News from "./Landingpage/News";
 
 const LandingPage = () => {
   return (
@@ -108,6 +109,9 @@ const LandingPage = () => {
       </Carousel>
       <Grid>
         <NewArrival />
+      </Grid>
+      <Grid>
+        <News />
       </Grid>
     </Grid>
   );
