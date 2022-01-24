@@ -3,6 +3,7 @@ import { Button, Grid } from "@material-ui/core";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import SendIcon from "@mui/icons-material/Send";
+import NewArrival from "./Landingpage/NewArrival";
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <Grid container>
           <img
             src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg"
+            alt="invalid"
             style={{ position: "relative", color: "white" }}
           />
           <Grid
@@ -46,7 +48,10 @@ const LandingPage = () => {
           </Grid>
         </Grid>
         <Grid>
-          <img src="https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_960_720.jpg" />
+          <img
+            src="https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_960_720.jpg"
+            alt="invalid"
+          />
           <Grid
             style={{
               position: "absolute",
@@ -72,7 +77,10 @@ const LandingPage = () => {
           </Grid>
         </Grid>
         <Grid>
-          <img src="https://cdn.pixabay.com/photo/2018/04/10/10/37/window-3307004_960_720.png" />
+          <img
+            src="https://cdn.pixabay.com/photo/2018/04/10/10/37/window-3307004_960_720.png"
+            alt="invalid"
+          />
           <Grid
             style={{
               position: "absolute",
@@ -98,6 +106,9 @@ const LandingPage = () => {
           </Grid>
         </Grid>
       </Carousel>
+      <Grid>
+        <NewArrival />
+      </Grid>
     </Grid>
   );
 };

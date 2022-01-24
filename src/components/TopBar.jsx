@@ -14,7 +14,7 @@ import {Link} from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   title: {
     color: "black",
-    padding: "20px",
+    padding: "10px",
   },
   btn: {
     fontSize: 20,
